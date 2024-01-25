@@ -1,6 +1,8 @@
 # Before you start:
+##Download data:
+- You can get the data from the following Dropbox folder: https://www.dropbox.com/scl/fi/ot9cg0udzqv9cunqufjzq/data.tar.gz?rlkey=5jya8v3qyxcnukm90tbg4gxx7&dl=0
 
-Create a folder in your working directory:
+##Create a folder in your working directory:
 
 \```bash
 mkdir foldername
