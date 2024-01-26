@@ -47,9 +47,6 @@ GATK_R2=$PROJECT_DIR/04_gatk_round2
 
 ##----------------------------------------------------------------------------------------
 
-
-#gatk CombineGVCFs --reference $REF --output $RESULTS_DIR/vcf/combined_avr.g.vcf --variant ERR1760144_final_hapcall.g.vcf --variant ERR1760146_final_hapcall.g.vcf --variant ERR1760145_final_hapcall.g.vcf  --variant ERR1760147_final_hapcall.g.vcf
-
 gatk CombineGVCFs --reference $REF --output $GVCF_FILES/combined_avr.g.vcf --variant $GVCF_FILES/ERR1760144_final_hapcall.g.vcf --variant $GVCF_FILES/ERR1760146_final_hapcall.g.vcf --variant $GVCF_FILES/ERR1760145_final_hapcall.g.vcf  --variant $GVCF_FILES/ERR1760147_final_hapcall.g.vcf
 
 ##----------------------------------------------------------------------------------------

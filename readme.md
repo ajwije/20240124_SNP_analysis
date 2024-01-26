@@ -91,4 +91,15 @@ bash 20240125_gatk_r1.sh
     - The `--variant` option specifies the input VCF file.
     - The `--filter-name` and `--filter-expression` options specify the filters to be applied.
     
+1. **QD < 2.01**: This filter is applied on the `QD` (Quality by Depth) value. It's the variant confidence (from the QUAL field) divided by the unfiltered depth of non-reference samples. Any variant with a `QD` value less than `2.0` would be marked as filtered.
+
+2. **FS > 60.012**: This filter is applied on the `FS` (Fisher Strand Bias) value. It's used to detect strand bias in the data. If the `FS` value is greater than `60.0`, the variant would be marked as filtered.
+
+3. **SOR > 3.03**: This filter is applied on the `SOR` (Symmetric Odds Ratio) value. It's used to detect strand bias. If the `SOR` value is greater than `3.0`, the variant would be marked as filtered.
+
+4. **MQ < 40.02**: This filter is applied on the `MQ` (Mapping Quality) value. It's used to filter out low-quality mappings. If the `MQ` value is less than `40.0`, the variant would be marked as filtered.
+
+5. **MQRankSum < -12.54**: This filter is applied on the `MQRankSum` value. It's used to detect any difference in mapping qualities between reference and alternate alleles. If the `MQRankSum` value is less than `-12.5`, the variant would be marked as filtered.
+
+6. **ReadPosRankSum < -8.05**: This filter is applied on the `ReadPosRankSum` value. It's used to detect any difference in the positioning of reference and alternate alleles within the reads. If the `ReadPosRankSum` value is less than `-8.0`, the variant would be marked as filtered.
 
