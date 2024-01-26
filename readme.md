@@ -1,14 +1,17 @@
-#SNP analysis using GATK
+# SNP analysis using GATK
 
 We are using the dataset from BioProject PRJEB18647. 
 This particular dataset contains Illumina short reads from four distinct populations of Arabidopsis halleri subsp. halleri (namely Aha18, AhaN1, AhaN3, AhaN4). 
 Originally, this dataset served the purpose of assessing genomic diversity and distinguishing between these four populations, as per the study by Fischer et al.
 
-##Before you start:
-###Download data:
+## Before you start:
+
+### Download data:
+
 - You can get the data from the following Dropbox folder: https://www.dropbox.com/scl/fi/ot9cg0udzqv9cunqufjzq/data.tar.gz?rlkey=5jya8v3qyxcnukm90tbg4gxx7&dl=0
 
-###Create a folder in your working directory:
+### Create a folder in your working directory:
+
 
 \```bash
 mkdir foldername
